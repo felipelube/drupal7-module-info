@@ -7,5 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felipe Lube de Bragança",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "php-unserialize": "0.0.1",
+    "sqlite": "^2.9.2"
+  }
 }
