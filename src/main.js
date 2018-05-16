@@ -42,11 +42,11 @@ const dbPromise = (filename) => sqlite.open(filename, { Promise });
         composerVersion = version;
       }
 
-      const composerProject = `drupal/${project}`;
+      const composerProject = project === 'drupal' ? 'drupal/drupal' : `drupal/${project}`;
       const projectObj = {};
       projectObj[composerProject] = `${composerVersion}`;
       /** Filter projects of Drupal itself and duplicated entries */
-      if ( project !== 'drupal' && !projects.find(project => project.hasOwnProperty(composerProject) ) ) {
+      if (!projects.find(project => project.hasOwnProperty(composerProject) ) ) {
         projects.push(projectObj);
       }
       return projects;
