@@ -1,5 +1,5 @@
 {
-  "name": "drupal-module-info",
+  "name": "drupal7-module-info",
   "version": "1.0.0",
   "description": "A tool to extract Drupal 7 Module information direct from database",
   "main": "src/main.js",
