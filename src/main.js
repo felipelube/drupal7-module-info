@@ -31,7 +31,7 @@ const dbPromise = (filename) => sqlite.open(filename, { Promise });
       const moduleInfo = unserialize(moduleEntry.info);
       const { project, name, version } = moduleInfo;
       if (!project) {
-        console.error(`NOTICE: Project "${name}" has no project defined - will be skiped.`);
+        console.error(`NOTICE: Project "${name}" has no project defined - will be skipped.`);
         return projects;
       }
       /** Transform Drupal version string to composer format */
